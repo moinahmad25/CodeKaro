@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* navigation-bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* left-side navbar */
+
+.navbar .left-section h2 {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 3vmin; */
+    font-weight: light;
+    color: black;
+}
+
+.left-section {
+    display: flex;
+    margin: 10px 100px;
+}
+
+.left-section-item {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.left-section-item li {
+    list-style: none;
+    padding: 0 15px;
+
+}
+
+.left-section-item li a {
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+    font-weight: lighter;
+}
+#register{
+    font-weight: bolder;
+    color: black;
+}
+#register:hover{
+    font-weight: lighter;
+}
+
+
+
+/* right side navbar */
+
+.right-section {
+    display: flex;
+    margin: 10px 100px;
+}
+
+.right-section-item {
+    display: flex;
+    /* padding: 0 15px; */
+    align-items: center;
+}
+
+.right-section-item li {
+    list-style: none;
+    padding: 0 10px;
+
+}
+
+.right-section-item li a {
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+    font-weight: lighter;
+}
+
+.right-section-item li .btn {
+    color: white;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 8px 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: black;
+}
+
+.left-section-item li a:hover {
+    animation-name: nav-hover;
+    /* animation-duration: 1s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-hover {
+    to {
+        /* color: rgb(68, 66, 66); */
+        font-weight: 400;
+        /* transition: all 1s ease-out; */
+    }
+}
+
+.right-section-item li a:hover {
+    animation-name: nav2-hover;
+    /* animation-duration: 0.1s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav2-hover {
+    to {
+        /* color: rgb(68, 66, 66); */
+        font-weight: 400;
+    }
+}
+
+.body,
+html {
+    overflow-x: hidden;
+}
+.container{
+    width: 60%;
+    height: 36rem;
+    /* background: lightyellow; */
+    margin: 4rem auto;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid rgb(237, 237, 237);
+    box-shadow: 4px 5px 5px rgb(179, 179, 179);
+    
+}
+.container:hover{
+    animation-name: shadow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes shadow{
+    to{
+        box-shadow: 8px 10px 10px rgb(179, 179, 179);
+    }
+}
+.registration{
+    margin-top: 3rem;
+}
+.reg{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#p1{
+    color: rgb(133, 133, 133);
+    font-size: 14px;
+    /* font-weight: 600; */
+}
+#sign-up{
+    font-size: 30px;
+    color: rgb(64, 64, 64);
+    margin: 0.8rem 0;
+}
+#log{
+    margin-left: 0.4rem;
+    color: rgb(9, 94, 253);
+    font-weight: bold;
+}
+#log:hover{
+    color: rgb(5, 73, 198);
+    text-decoration: underline;
+}
+.email-pass{
+    margin: 3rem 0 2rem 0;
+}
+#p2{
+    font-size: 15px;
+    color: rgb(49, 49, 49);
+    
+}
+#email{
+    width: 18rem;
+    height: 3rem;
+    border: 1.5px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    margin-top: 10px;
+}
+.item1{
+    margin-bottom: 1.5rem;
+}
+.bton{
+    width: 18rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(9, 94, 253);
+    margin-top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.bton:hover{
+    animation-name: btondark;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes btondark{
+    to{
+        background: rgb(4, 69, 188);
+    }
+}
+.bton1{
+    width: 18rem;
+    height: 3rem;
+    border: 1px solid rgb(208, 207, 207);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.bton1:hover{
+    animation-name: bton1dark;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes bton1dark{
+    to{
+        background: black;
+        color: white;
+    }
+}
+#sign{
+    color: white;
+}

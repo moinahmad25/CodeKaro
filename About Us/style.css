@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+/* navigation-bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* left-side navbar */
+
+.navbar .left-section h2 {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 3vmin; */
+    font-weight: light;
+    color: black;
+}
+
+.left-section {
+    display: flex;
+    margin: 10px 100px;
+}
+
+.left-section-item {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.left-section-item li {
+    list-style: none;
+    padding: 0 15px;
+
+}
+
+.left-section-item li a {
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+    font-weight: lighter;
+}
+#about{
+    font-weight: bolder;
+    color: black;
+}
+#about:hover{
+    font-weight: lighter;
+}
+
+
+
+/* right side navbar */
+
+.right-section {
+    display: flex;
+    margin: 10px 100px;
+}
+
+.right-section-item {
+    display: flex;
+    /* padding: 0 15px; */
+    align-items: center;
+}
+
+.right-section-item li {
+    list-style: none;
+    padding: 0 10px;
+
+}
+
+.right-section-item li a {
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+    font-weight: lighter;
+}
+
+.right-section-item li .btn {
+    color: white;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 8px 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: black;
+}
+
+.left-section-item li a:hover {
+    animation-name: nav-hover;
+    /* animation-duration: 1s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-hover {
+    to {
+        /* color: rgb(68, 66, 66); */
+        font-weight: 400;
+        /* transition: all 1s ease-out; */
+    }
+}
+
+.right-section-item li a:hover {
+    animation-name: nav2-hover;
+    /* animation-duration: 0.1s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav2-hover {
+    to {
+        /* color: rgb(68, 66, 66); */
+        font-weight: 400;
+    }
+}
+
+.body,
+html {
+    overflow-x: hidden;
+}
+.about{
+    padding:8% 8% 0% 8%;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.about,.p2{
+    text-align: center;
+   
+}
+.p2{
+    color:rgb(194, 69, 12);
+    margin-top:-10px;
+}
+.photo{
+    height: 120%;
+    padding-left: 30%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info{
+    text-align: center;
+    padding: 0% 11% 0% 11%;
+    font-size: large;
+    font-family: poppins;
+}
+.founder{
+    padding: 3% 11% 0% 11%;
+    font-size: 1.3rem;
+    font-family: poppins;
+
+}
+.webers{
+    padding:7% 8% 0% 10%;
+    font-size: 1rem;
+}
+.box{
+    background-color: rgb(93, 59, 219);
+    width: 11rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.sticky {
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-left: 30px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1111;
+    cursor: pointer;
+}
+#co{
+    width: 11rem;
+    border-radius: 10px;
+    height: 11rem;
+    /* margin-bottom: -5px; */
+}
+.p{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+#para1{
+    font-size: 18px;
+}
+#para2{
+    font-size: 12px;
+}
+#para3{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.para{
+    margin-top: 10px;
+}
+/* footer part  */
+
+.footer-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-section2{
+    display: flex;
+    /* justify-content: space-around; */
+    /* background: lightblue; */
+}
+#foot{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: -10rem;
+}
+.social-media-logo{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 3rem;
+    margin-left: 15rem;
+    margin-bottom: 1.3rem;
+}
+.social-media-logo img{
+    padding-left: 2rem;
+    cursor: pointer;
+    width: 4.5rem;
+}
+.left-section-item2 {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.left-section-item2 li {
+    list-style: none;
+    padding: 0 15px;
+
+}
+
+.left-section-item2 li a {
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+    font-weight: lighter;
+}
